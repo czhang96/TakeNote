@@ -1,0 +1,75 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:500,400,300" rel="stylesheet" type="text/css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+        <script src="{{ STATIC_URL }}mysite/script.js"></script>
+        <script src="{{ STATIC_URL }}mysite/sidebar.js"></script>
+       
+        <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+        <link rel="stylesheet" href="{{ STATIC_URL }}mysite/material-design-hamburger.css">
+        <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}mysite/style.css">
+        
+
+
+
+
+        <meta charset='utf-8' />
+    </head>
+
+    <body>
+    
+        <div class="header">
+            <section class="material-design-hamburger">
+                <div class="material-design-hamburger__icon">
+                    <span class="material-design-hamburger__layer"></span>
+                </div>
+            </section>
+
+            <div class="logo">NoteBook</div>
+            
+            <div id="tabsContainer">
+
+                <ul id="tabs">
+                </ul>
+
+                <ul id="clonedtabs">
+                </ul>
+            </div>
+            <div class='account'>
+                <div id = 'login'>
+                    <div id="login-button" class='buttons' style="display: none">Login with Google</div>
+                </div>
+                <div id = 'logout'>
+                    <div id="user-info" style="display: inline-block; position:fixed; top:0;right:0;margin-right:1em"></div>
+                    <div id="logout-button" class='buttons' style="display: none;margin-right:1em">Logout</div>
+                </div>
+            </div>
+        </div>
+        <div class= 'wrapper'>
+            <div class="sidebar">
+                <div id = "task_buttons">
+                    <div class='sidebar_header actions-handle'>Actions</div>
+                    <div class= "button" id="new-tab">New Tasklist</div>
+                    <div class= "button" id="new-task">New Task</div>
+                    
+                </div>
+
+                <div id= 'tasklists'>
+                    <div class='sidebar_header tasklist-handle'>Task Lists</div>
+                </div>
+                
+                
+            </div>
+            <div class="main">
+            
+
+            </div>
+
+        </div>
+     <script src="{{ STATIC_URL }}mysite/material-design-hamburger.js"></script>
+    </body>
+</html>
