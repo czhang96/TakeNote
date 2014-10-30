@@ -1,13 +1,16 @@
-.material-design-hamburger div {
+.material-design-hamburger {
   display: block;
   border: none;
   background: none;
+  width:4em;
+  margin:0;
 
 }
 
 .material-design-hamburger__icon {
   padding: 2rem 1rem;
   cursor: pointer;
+  width:2em;
 }
 
 .material-design-hamburger__layer {

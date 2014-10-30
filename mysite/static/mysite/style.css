@@ -183,3 +183,9 @@ body{
 	margin-right:0.5em;
 
 }
+#tabsContainer{
+	position:absolute;
+	z-index:10;
+	top:1em;
+	left:210px;
+}
